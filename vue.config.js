@@ -21,7 +21,7 @@ module.exports ={
       test: {
          entry: 'src/entries/test/main.js', //入口文件
          template: 'public/test.html',
-         filename: 'test'
+         filename: 'test.html'
      },
 
  }
