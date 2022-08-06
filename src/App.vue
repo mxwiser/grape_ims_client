@@ -10,7 +10,7 @@
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="/img/vuetify-logo-dark.png"
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
           transition="scale-transition"
           width="40"
         />
@@ -20,7 +20,7 @@
           class="shrink mt-1 hidden-sm-and-down"
           contain
           min-width="100"
-          src="/img/vuetify-name-dark.png"
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
           width="100"
         />
       </div>
@@ -38,21 +38,20 @@
     </v-app-bar>
 
     <v-main>
-      11
-      <HelloWorld/>
+
 
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from '../../components/home/HelloWorld';
+//import HelloWorld from '../../components/home/HelloWorld';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+
   },
 
   data: () => ({
