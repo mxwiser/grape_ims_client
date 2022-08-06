@@ -12,7 +12,19 @@ module.exports ={
      host:"0.0.0.0",
   },
 
-  transpileDependencies: [
-    'vuetify'
-  ]
+ pages: {
+      Index:{
+          entry: 'src/entries/home/main.js', //入口文件
+          template: 'public/index.html', //使用的html模板
+          filename: 'index.html' //因为访问路径时会默认访问 index.html 所以将默认显示的置为index.html
+      },
+      test: {
+         entry: 'src/entries/test/main.js', //入口文件
+         template: 'public/index.html',
+         filename: 'test.html'
+     },
+
+ }
+
+
 }
