@@ -1,6 +1,6 @@
 import VueRouter from "vue-router";
 import test from  '../components/test/entry'
-import notFound from "../components/helper/404"
+import notFound from "../components/helper/noFound"
 export default new VueRouter({
     mode:"history",
     routes:[

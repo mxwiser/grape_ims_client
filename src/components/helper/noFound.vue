@@ -5,7 +5,7 @@
 <script>
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "404"
+  name: "noFound"
 }
 </script>
 
