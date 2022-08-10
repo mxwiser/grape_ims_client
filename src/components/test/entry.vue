@@ -3,11 +3,17 @@
 
 
   <v-app>
+    <v-app-bar app color="blue" elevation="1"></v-app-bar>
+
     <v-main>
-      <h1 style="text-align: center">{{text}}</h1>
-      <h1 style="text-align: center">姓名：{{person.name}}</h1>
-      <h1 style="text-align: center">年龄：{{person.age}}</h1>
-      <h2 style="text-align: center"><a :href="url">跳转</a></h2>
+
+      <v-container>
+        <h1 style="text-align: center">{{text}}</h1>
+        <h1 style="text-align: center">姓名：{{person.name}}</h1>
+        <h1 style="text-align: center">年龄：{{person.age}}</h1>
+        <h2 style="text-align: center"><a :href="url">跳转</a></h2>
+      </v-container>
+
 
     </v-main>
   </v-app>
