@@ -1,18 +1,30 @@
 <template>
 
-  <div>
-    <h1 style="text-align: center">{{text}}</h1>
-    <h1 style="text-align: center">姓名：{{person.name}}</h1>
-    <h1 style="text-align: center">年龄：{{person.age}}</h1>
-    <h2 style="text-align: center"><a :href="url">跳转</a></h2>
-  </div>
 
+
+  <v-app>
+    <v-main>
+      <h1 style="text-align: center">{{text}}</h1>
+      <h1 style="text-align: center">姓名：{{person.name}}</h1>
+      <h1 style="text-align: center">年龄：{{person.age}}</h1>
+      <h2 style="text-align: center"><a :href="url">跳转</a></h2>
+
+    </v-main>
+  </v-app>
 
 
 </template>
 
 <script>
+let preson={name:"",
+sex:"d"
+}
 
+Object.defineProperty(preson,"age",{value:13})
+
+console.log(Object.keys(preson))
+
+console.log(preson)
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -26,6 +38,8 @@ export default {
     }
   })
 }
+
+
 </script>
 
 <style scoped>
