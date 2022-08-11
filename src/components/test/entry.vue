@@ -6,15 +6,26 @@
     <v-app-bar app color="blue" elevation="1"></v-app-bar>
 
     <v-main>
-
       <v-container>
         <h1 style="text-align: center">{{text}}</h1>
         <h1 style="text-align: center">姓名：{{person.name}}</h1>
         <h1 style="text-align: center">年龄：{{person.age}}</h1>
         <h2 style="text-align: center"><a :href="url">跳转</a></h2>
+
+        <v-btn align-center align-content-center
+            depressed
+            color="primary"
+              @click="myInfo"
+        >
+          提示
+        </v-btn>
+
+
+        <v-text-field @keydown="myInfo" label="Another input"></v-text-field>
+
+
+
       </v-container>
-
-
     </v-main>
   </v-app>
 
@@ -41,8 +52,17 @@ export default {
     person:{
       name:"毛小文",
       age:20
-    }
-  })
+    },
+
+  }),
+  methods:{
+
+  myInfo(event){
+    console.log(event.key,event.keyCode)
+
+  },
+
+  }
 }
 
 
