@@ -15,12 +15,13 @@ import routes from './router'
 
 
 Vue.config.productionTip = false
+
 Vue.use(VueRouter)
+Vue.use(Buefy)
+Vue.use(VModal)
 
 new Vue({
-  VModal,
   vuetify,
-  Buefy,
   render: h => h(App),
   router:routes
 }).$mount('#app')

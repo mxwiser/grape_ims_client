@@ -23,7 +23,12 @@
 
         <v-text-field @keydown="myInfo" label="Another input"></v-text-field>
 
-
+        <b-field label="Password">
+          <b-input type="password"
+                   value="iwantmytreasure"
+                   password-reveal>
+          </b-input>
+        </b-field>
 
       </v-container>
     </v-main>
