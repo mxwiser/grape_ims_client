@@ -23,12 +23,31 @@
 
         <v-text-field @keyup.ctrl="myInfo" label="Another input"></v-text-field>
 
-        <b-field label="Password">
+
+
+
+        <b-field :label="getMS()">
           <b-input type="password"
-                   value="iwantmytreasure"
+
                    password-reveal>
           </b-input>
         </b-field>
+
+
+        <v-btn
+            icon
+            x-large
+
+        >
+
+          <v-avatar
+              color="purple"
+              size="40"
+          ><span class="white--text text-h6">毛</span></v-avatar>
+
+
+        </v-btn>
+
 
       </v-container>
     </v-main>
@@ -38,15 +57,15 @@
 </template>
 
 <script>
-let preson={name:"",
+let person={name:"",
 sex:"d"
 }
 
-Object.defineProperty(preson,"age",{value:13})
+Object.defineProperty(person,"age",{value:13})
 
-console.log(Object.keys(preson))
+console.log(Object.keys(person))
 
-console.log(preson)
+console.log(person)
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -61,7 +80,10 @@ export default {
 
   }),
   methods:{
-
+  getMS(){
+    console.log("@")
+    return "1"
+  },
   myInfo(event){
     console.log(event.key,event.keyCode)
 
