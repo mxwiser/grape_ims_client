@@ -15,16 +15,12 @@
         <v-btn align-center align-content-center
             depressed
             color="primary"
-              @click="myInfo"
+              @click="getMS"
         >
           提示
         </v-btn>
 
-
         <v-text-field @keyup.ctrl="myInfo" label="Another input"></v-text-field>
-
-
-
 
         <b-field :label="getMS()">
           <b-input type="password"
@@ -33,26 +29,20 @@
           </b-input>
         </b-field>
 
-
         <v-btn
             icon
-            x-large
-
-        >
+            x-large>
 
           <v-avatar
               color="purple"
               size="40"
-          ><span class="white--text text-h6">毛</span></v-avatar>
-
+          >
+            <span class="white--text text-h6">毛</span></v-avatar>
 
         </v-btn>
-
-
       </v-container>
     </v-main>
   </v-app>
-
 
 </template>
 
@@ -77,22 +67,20 @@ export default {
       name:"毛小文",
       age:20
     },
-
   }),
+
   methods:{
   getMS(){
     console.log("@")
+    this.axios.get("/")
     return "1"
   },
   myInfo(event){
     console.log(event.key,event.keyCode)
-
   },
 
   }
 }
-
-
 </script>
 
 <style scoped>
