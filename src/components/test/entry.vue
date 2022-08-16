@@ -53,8 +53,8 @@ console.log(Object.keys(person))
 
 console.log(person)
 
-import func from "@/components/helper/func";
 
+import Vue from "vue";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -74,8 +74,8 @@ export default {
     getMS(){
     console.log("@")
 
-    this.$set(this.person,"sex",33)
-    func.methods.getMA()
+    Vue.prototype.func.methods.setVV(this.person)
+
 
     return "1"
   },
