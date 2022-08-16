@@ -14,6 +14,12 @@ export default {
   data: () => ({
     //
   }),
+  methods:{
+    getMM(){
+      alert("aa")
+    }
+
+  }
 };
 
 </script>

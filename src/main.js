@@ -15,6 +15,11 @@ import VueRouter from "vue-router";
 import routes from './router'
 //import Test from "@/entries/Test/Test";
 
+
+//globals
+
+
+
 Vue.prototype.axios=axios
 
 Vue.config.productionTip = false
@@ -26,6 +31,7 @@ Vue.use(VModal)
 new Vue({
   vuetify,
   render: h => h(App),
-  router:routes
+  router:routes,
+
 }).$mount('#app')
 
