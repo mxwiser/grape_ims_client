@@ -20,9 +20,16 @@ import routes from './router'
 
 
 
-Vue.prototype.axios=axios
 
+
+
+
+Vue.prototype.axios=axios
 Vue.config.productionTip = false
+
+
+
+
 
 Vue.use(VueRouter)
 Vue.use(Buefy)
@@ -32,6 +39,11 @@ new Vue({
   vuetify,
   render: h => h(App),
   router:routes,
+  methods:{
+    getMM() {
+      alert("")
+    }
+  }
 
 }).$mount('#app')
 

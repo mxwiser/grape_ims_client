@@ -6,6 +6,11 @@
 <script>
 //import HelloWorld from '../../components/home/HelloWorld';
 
+
+
+
+
+
 export default {
   name: 'App',
 
@@ -14,12 +19,7 @@ export default {
   data: () => ({
     //
   }),
-  methods:{
-    getMM(){
-      alert("aa")
-    }
 
-  }
 };
 
 </script>
