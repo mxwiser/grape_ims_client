@@ -2,11 +2,8 @@
   <router-view></router-view>
 
 </template>
-
 <script>
 //import HelloWorld from '../../components/home/HelloWorld';
-
-
 console.log(
     "############################" +
     "\n2022年9月竣工" +
@@ -16,13 +13,13 @@ console.log(
     "\n邮箱:mxwiser@foxmail.com" +
     "\n############################")
 
-
-
 export default {
   name: 'App',
+  methods:{
+    abC(){
 
-
-
+    }
+  },
   data: () => ({
     //
   }),

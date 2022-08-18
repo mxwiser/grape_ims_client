@@ -75,7 +75,8 @@ export default {
     console.log("@")
 
    Vue.prototype.func.methods.setVV(this.person)
-
+   console.log(this)
+    //  this.$root.prototype.func.setVV(this.person)
 
     return "1"
   },

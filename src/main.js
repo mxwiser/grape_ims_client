@@ -41,11 +41,6 @@ new Vue({
   vuetify,
   render: h => h(App),
   router:routes,
-  methods:{
-    getMM() {
-      alert("")
-    }
-  }
 
 }).$mount('#app')
 
