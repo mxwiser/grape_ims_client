@@ -2,7 +2,7 @@
 
 
 
-  <v-app v-cloak>
+  <v-app >
     <v-app-bar app color="blue" elevation="1"></v-app-bar>
 
     <v-main>
@@ -60,7 +60,7 @@ export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "entry",
   data: () => ({
-    text:"实训基地管理系统",
+    text:"ABC",
     url:"www.baidu.com",
       ishow:false,
     person:{
