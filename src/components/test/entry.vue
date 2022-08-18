@@ -2,7 +2,7 @@
 
 
 
-  <v-app>
+  <v-app v-cloak>
     <v-app-bar app color="blue" elevation="1"></v-app-bar>
 
     <v-main>
@@ -74,7 +74,7 @@ export default {
     getMS(){
     console.log("@")
 
-    Vue.prototype.func.methods.setVV(this.person)
+   Vue.prototype.func.methods.setVV(this.person)
 
 
     return "1"
