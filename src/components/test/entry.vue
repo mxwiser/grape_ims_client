@@ -54,37 +54,34 @@ console.log(Object.keys(person))
 console.log(person)
 
 
-import Vue from "vue";
+// import Vue from "vue";
+import {helperFun} from "@/mixin";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "entry",
-  data: () => ({
-    text:"ABC",
-    url:"www.baidu.com",
+    data: () => ({
+      text:"ABC",
+      url:"www.baidu.com",
       ishow:false,
-    person:{
-      name:"毛小文",
-      age:20
-    },
+      person:{
+        name:"毛小文",
+        age:20
+      },
   }),
 
   methods:{
-
     getMS(){
-    console.log("@")
-
-   Vue.prototype.func.methods.setVV(this.person)
-   console.log(this)
-    //  this.$root.prototype.func.setVV(this.person)
-
-    return "1"
+      console.log("@")
+      //Vue.prototype.func.methods.setVV(this.person)
+      this.setVV(this.person)
+      return "1"
+    },
+    myInfo(event){
+      console.log(event.key,event.keyCode)
+    },
   },
-  myInfo(event){
-    console.log(event.key,event.keyCode)
-  },
-
-  }
+  mixins:[helperFun]
 }
 </script>
 
