@@ -1,7 +1,4 @@
 <template>
-
-
-
   <v-app >
     <v-app-bar app color="blue" elevation="1"></v-app-bar>
 
@@ -41,10 +38,7 @@
           <v-avatar color="purple" size="40">
             <span class="white--text text-h6">{{ person.sex }}</span></v-avatar>
         </v-btn>
-
-
         <section>
-
           <br/>
           <br/>
           <b-message
@@ -54,7 +48,6 @@
               aria-close-label="Close message">
            最近库存需要清算,暂停借物服务
           </b-message>
-
           <b-message
               title="通报"
               type="is-danger"
@@ -62,8 +55,6 @@
             0805 1k电阻库存丢失
           </b-message>
         </section>
-
-
       </v-container>
     </v-main>
   </v-app>
