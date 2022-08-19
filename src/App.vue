@@ -17,7 +17,6 @@ export default {
   name: 'App',
   methods:{
     abC(){
-
     }
   },
   data: () => ({

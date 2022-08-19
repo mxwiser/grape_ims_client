@@ -7,16 +7,25 @@
 
     <v-main>
       <v-container>
+
+        <b-carousel>
+          <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
+            <section :class="`hero is-medium is-${carousel.color}`">
+              <div class="hero-body has-text-centered">
+                <h1 class="title">{{carousel.text}}</h1>
+              </div>
+            </section>
+          </b-carousel-item>
+        </b-carousel>
+
+
         <h1 style="text-align: center">{{text}}</h1>
-        <h1 style="text-align: center">姓名：{{person.name}}</h1>
-        <h1 style="text-align: center">年龄：{{person.age}}</h1>
-        <h2 style="text-align: center"><a :href="url">跳转</a></h2>
 
         <v-btn align-center align-content-center depressed color="primary" @click="getMS" v-show="true">
           提示
         </v-btn>
 
-        <v-text-field @keyup.ctrl="myInfo" label="Another input"></v-text-field>
+
 
         <b-field v-if="ishow" label="1111">
           <b-input type="password" password-reveal>
@@ -25,7 +34,7 @@
 
         <v-btn icon x-large>
           <v-avatar color="purple" size="40">
-            <span class="white--text text-h6">毛</span></v-avatar>
+            <span class="white--text text-h6">A</span></v-avatar>
         </v-btn>
 
         <v-btn icon x-large>
@@ -34,6 +43,25 @@
         </v-btn>
 
 
+        <section>
+
+          <br/>
+          <br/>
+          <b-message
+              title="公告"
+              v-model="isActive"
+              type="is-info"
+              aria-close-label="Close message">
+           最近库存需要清算,暂停借物服务
+          </b-message>
+
+          <b-message
+              title="通报"
+              type="is-danger"
+              aria-close-label="Close message">
+            0805 1k电阻库存丢失
+          </b-message>
+        </section>
 
 
       </v-container>
@@ -43,45 +71,47 @@
 </template>
 
 <script>
-let person={name:"",
-sex:"d"
-}
-
-Object.defineProperty(person,"age",{value:13})
-
-console.log(Object.keys(person))
-
-console.log(person)
 
 
-// import Vue from "vue";
-import {helperFun} from "@/mixin";
+
 
 export default {
+
+
+
   // eslint-disable-next-line vue/multi-word-component-names
   name: "entry",
     data: () => ({
-      text:"ABC",
+      carousels: [
+        { text: 'Slide 1', color: 'primary' },
+        { text: 'Slide 2', color: 'info' },
+        { text: 'Slide 3', color: 'success' },
+        { text: 'Slide 4', color: 'warning' },
+        { text: 'Slide 5', color: 'danger' }
+      ],
+      text:"11",
       url:"www.baidu.com",
       ishow:false,
+      isActive: true,
       person:{
         name:"毛小文",
-        age:20
+        age:20,
       },
   }),
 
   methods:{
     getMS(){
-      console.log("@")
+    //console.log(this.u)
       //Vue.prototype.func.methods.setVV(this.person)
       this.setVV(this.person)
+
       return "1"
     },
     myInfo(event){
       console.log(event.key,event.keyCode)
     },
   },
-  mixins:[helperFun]
+
 }
 </script>
 
