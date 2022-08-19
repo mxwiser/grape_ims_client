@@ -14,23 +14,8 @@ import 'buefy/dist/buefy.css'
 import VueRouter from "vue-router";
 import routes from './router'
 
-//import Test from "@/entries/Test/Test";
-
-
-//globals
-import funks from "@/components/helper/func";
-Vue.prototype.func=funks
-
-
-
-
-
-
 Vue.prototype.axios=axios
 Vue.config.productionTip = false
-
-
-
 
 
 Vue.use(VueRouter)
