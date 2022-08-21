@@ -95,7 +95,6 @@ export default {
     //console.log(this.u)
       //Vue.prototype.func.methods.setVV(this.person)
       this.setVV(this.person)
-
       return "1"
     },
     myInfo(event){
