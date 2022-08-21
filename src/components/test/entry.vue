@@ -95,7 +95,7 @@ export default {
     getMS(){
     //console.log(this.u)
       //Vue.prototype.func.methods.setVV(this.person)
-      this.axios.get('http://baidu.com/user?ID=12345')
+      this.axios.get('/user?ID=12345')
           .then(function (response) {
             console.log(response);
           })

@@ -1,13 +1,16 @@
 //Vue
 import Vue from 'vue'
-import './plugins/axios'
 import App from './App.vue'
 import VModal from 'vue-js-modal'
 
 //plugins
 import axios from "axios";
-Vue.prototype.axios=axios
+if (process.env.BASE_URL!=""){
+  console.log("@已设置BASE_URL:"+process.env.BASE_URL)
+  axios.defaults.baseURL=process.env.BASE_URL
+}
 
+Vue.prototype.axios=axios
 
 import vuetify from './plugins/vuetify'
 import Buefy from 'buefy'
