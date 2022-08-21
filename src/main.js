@@ -5,9 +5,9 @@ import VModal from 'vue-js-modal'
 
 //plugins
 import axios from "axios";
-if (process.env.BASE_URL!=""){
-  console.log("@已设置BASE_URL:"+process.env.BASE_URL)
-  axios.defaults.baseURL=process.env.BASE_URL
+if (process.env.VUE_APP_MY_API_URL!=""){
+  console.log("@VUE_APP_MY_API_URL:"+process.env.VUE_APP_MY_API_URL)
+  axios.defaults.baseURL=process.env.VUE_APP_MY_API_URL
 }
 
 Vue.prototype.axios=axios
