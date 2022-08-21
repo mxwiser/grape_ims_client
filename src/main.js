@@ -1,10 +1,14 @@
 //Vue
 import Vue from 'vue'
+import './plugins/axios'
 import App from './App.vue'
 import VModal from 'vue-js-modal'
 
 //plugins
 import axios from "axios";
+Vue.prototype.axios=axios
+
+
 import vuetify from './plugins/vuetify'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
@@ -25,8 +29,8 @@ import store from './store'
 
 
 
+//
 
-Vue.prototype.axios=axios
 Vue.config.productionTip = false
 
 
