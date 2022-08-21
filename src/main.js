@@ -15,14 +15,15 @@ import routes from './router'
 
 //mixin
 import {helperFun} from "@/mixin";
+Vue.mixin(helperFun)
 
+//vuex
 import store from './store'
 
 
 
 
 
-Vue.mixin(helperFun)
 
 
 Vue.prototype.axios=axios
@@ -32,6 +33,10 @@ Vue.config.productionTip = false
 Vue.use(VueRouter)
 Vue.use(Buefy)
 Vue.use(VModal)
+
+
+
+
 
 new Vue({
   vuetify,

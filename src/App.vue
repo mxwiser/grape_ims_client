@@ -13,7 +13,10 @@ console.log(
     "\n邮箱:mxwiser@foxmail.com" +
     "\n############################")
 
+console.log(window.location.host)
+
 export default {
+
   name: 'App',
   methods:{
     abC(){

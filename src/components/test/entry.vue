@@ -5,7 +5,7 @@
     <v-main>
       <v-container>
 
-        <b-carousel>
+        <b-carousel  :pause-info="pause">
           <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
             <section :class="`hero is-medium is-${carousel.color}`">
               <div class="hero-body has-text-centered">
@@ -80,6 +80,7 @@ export default {
         { text: 'Slide 4', color: 'warning' },
         { text: 'Slide 5', color: 'danger' }
       ],
+      pause: false,
       text:"11",
       url:"www.baidu.com",
       ishow:false,
@@ -94,6 +95,15 @@ export default {
     getMS(){
     //console.log(this.u)
       //Vue.prototype.func.methods.setVV(this.person)
+      this.axios.get('http://baidu.com/user?ID=12345')
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+
+
       this.setVV(this.person)
       return "1"
     },
