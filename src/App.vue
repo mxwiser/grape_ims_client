@@ -13,8 +13,6 @@ console.log(
     "\n邮箱:mxwiser@foxmail.com" +
     "\n############################")
 
-
-
 export default {
 
   name: 'App',

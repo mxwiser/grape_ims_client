@@ -66,7 +66,6 @@
 
 
 
-import axios from "axios";
 
 export default {
 
@@ -98,7 +97,7 @@ export default {
       //console.log(this.u)
       //Vue.prototype.func.methods.setVV(this.person)
 
-      axios.get('/user?ID=12345')
+      this.axios.get('/user?ID=12345')
           .then(function (response) {
             console.log(response);
           })
@@ -106,7 +105,7 @@ export default {
             console.log(error);
           });
 
-      this.setVV(this.person)
+      this.setVV(this.person);
       return "1"
     },
     myInfo(event){

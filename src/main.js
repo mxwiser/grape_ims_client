@@ -9,8 +9,8 @@ if (process.env.VUE_APP_MY_API_URL!=""){
   console.log("@VUE_APP_MY_API_URL:"+process.env.VUE_APP_MY_API_URL)
   axios.defaults.baseURL=process.env.VUE_APP_MY_API_URL
 }
-//Vue.prototype.axios=axios
-
+Vue.prototype.axios=axios
+//end axios
 
 //UI
 import vuetify from './plugins/vuetify'
@@ -47,7 +47,6 @@ new Vue({
   vuetify,
   render: h => h(App),
   store,
-  axios,
   router:routes
 }).$mount('#app')
 
