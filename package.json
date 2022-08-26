@@ -14,6 +14,7 @@
     "buefy": "^0.9.21",
     "core-js": "^3.8.3",
     "material-design-icons-iconfont": "^6.7.0",
+    "pubsub": "^3.2.1",
     "router-view": "^1.1.7",
     "vue": "^2.6.14",
     "vue-js-modal": "^2.0.1",
