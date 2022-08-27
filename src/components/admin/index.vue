@@ -4,7 +4,8 @@
 
     <v-main>
       <v-container>
-
+        <h1 @click="getMS">1213</h1>
+          
       </v-container>
     </v-main>
   </v-app>
@@ -16,34 +17,27 @@
 
 // import pubsub from "pubsub"
 
+import { helperFun } from '@/mixin';
+
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "index",
   data: () => ({
-    carousels: [
-      { text: 'Slide 1', color: 'primary' },
-      { text: 'Slide 2', color: 'info' },
-      { text: 'Slide 3', color: 'success' },
-      { text: 'Slide 4', color: 'warning' },
-      { text: 'Slide 5', color: 'danger' }
-    ],
-    pause: false,
-    text:"11",
-    url:"www.baidu.com",
-    ishow:false,
-    isActive: true,
-    person:{
-      name:"毛小文",
-      age:20,
-    },
+
   }),
   methods:{
     getMS(){
-      
+      this.clsVV("dd")
     },
     myInfo(){
     },
-  },
+  },components:{
+
+  },mounted() {
+    
+  },mixins: [helperFun],
+  
+  
 }
 </script>
 
