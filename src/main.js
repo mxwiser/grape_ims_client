@@ -4,7 +4,8 @@ import App from './App.vue'
 import VModal from 'vue-js-modal'
 
 //axios
-import axios from "axios";
+import axios from "axios"
+axios.defaults.timeout=8000
 if (process.env.VUE_APP_MY_API_URL!=""){
   console.log("@VUE_APP_MY_API_URL:"+process.env.VUE_APP_MY_API_URL)
   axios.defaults.baseURL=process.env.VUE_APP_MY_API_URL
