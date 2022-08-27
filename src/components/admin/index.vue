@@ -16,11 +16,7 @@
 
 // import pubsub from "pubsub"
 
-
 export default {
-
-
-
   // eslint-disable-next-line vue/multi-word-component-names
   name: "index",
   data: () => ({
@@ -41,28 +37,12 @@ export default {
       age:20,
     },
   }),
-
   methods:{
     getMS(){
-      //console.log(this.u)
-      //Vue.prototype.func.methods.setVV(this.person)
-
-      this.axios.get('/user?ID=12345')
-          .then(function (response) {
-            console.log(response);
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-
-      this.setVV(this.person);
-      return "1"
     },
-    myInfo(event){
-      console.log(event.key,event.keyCode)
+    myInfo(){
     },
   },
-
 }
 </script>
 
