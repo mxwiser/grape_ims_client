@@ -1,7 +1,7 @@
 <template>
   <v-app >
-    <v-app-bar app color="blue" elevation="1"></v-app-bar>
 
+  <bar></bar>
     <v-main>
       <v-container>
         <h1 @click="getMS">1213</h1>
@@ -16,7 +16,7 @@
 
 
 // import pubsub from "pubsub"
-
+import bar from "@/components/admin/bar";
 import { helperFun } from '@/mixin';
 
 export default {
@@ -28,11 +28,12 @@ export default {
   methods:{
     getMS(){
       this.clsVV("dd")
+
     },
     myInfo(){
     },
   },components:{
-
+    bar,
   },mounted() {
     
   },mixins: [helperFun],
